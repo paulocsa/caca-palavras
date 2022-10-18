@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+
+    <style>
+            
+            
+
+        table, th, td {
+border:1px solid black;
+
+
+}
+
+
+
+#n1,#n23,#n45,#n67,#n89,#n111,#n133,#n155{
+background-color: red;
+}
+
+#n3,#n26,#n49,#n72,#n95,#n118,#n141,#n164,#n187,#n210,#n233{
+background-color: red;
+}
+
+#n11{
+background-color: red;
+}
+
+#n33,#n55,#n77,#n99,#n121,#n143,#n165,#n209,#n231,#n253,#n275,#n297{
+background-color: red;
+}
+
+#n78,#n101,#n124,#n147,#n170,#n193,#n216,#n239,#n262{
+background-color: red;
+}
+#n144,#n166,#n188,#n232{
+background-color: red;
+}
+#n250,#n251,#n252,#n253,#n254,#n255,#n256,#n257,#n258{
+background-color: red;
+}
+#n122,#n145,#n168,#n191,#n214,#n237{
+    background-color: red;
+}
+#n7,#n28,#n70,#n91,#n112{
+    background-color: red;
+}
+
+#n290,#n291,#n292,#n293,#n294,#n295,#n296,#n297,#n298{
+    background-color: red;
+    }
+
+    #n53,#n76,#n32,#n40,#n62,#n84,#n106,#n128,#n150,#n172,#n194,#n216{
+    background-color: red;
+    }
+</style>
+</head>
+<body>
+<center>
+    <table>
+    <script>
+        matriz = new Array;
+        matriz = [
+        //   0         1      2       3       4       5       6       7       8       9      10       11      12      13     14      15      16      17      18      19      20      21     
+            ["T"	,"N"	,"M"	,"A"	,"I"	,"I"	,"J"	,"I"	,"N"	,"E"	,"P"	,"S"	,"E"	,"A"	,"E"	,"W"	,"G"	,"N"	,"A"	,"H"	,"L"	,"U"], //0
+            ["R"	,"U"	,"A"	,"O"	,"O"	,"E"	,"O"	,"U"	,"C"	,"C"	,"R"	,"W"	,"A"	,"E"	,"K"	,"T"	,"Y"	,"P"	,"M"	,"O"	,"E"	,"L"], //1
+            ["I"	,"N"	,"R"	,"O"	,"T"	,"S"	,"M"	,"O"	,"B"	,"A"	,"A"	,"E"	,"A"	,"F"	,"O"	,"H"	,"I"	,"A"	,"H"	,"I"	,"H"	,"F"], //2
+            ["C"	,"T"	,"W"	,"S"	,"B"	,"O"	,"O"	,"E"	,"O"	,"I"	,"N"	,"M"	,"E"	,"O"	,"R"	,"D"	,"B"	,"R"	,"E"	,"U"	,"E"	,"R"], //3
+            ["I"	,"I"	,"K"	,"U"	,"N"	,"S"	,"C"	,"T"	,"N"	,"N"	,"C"	,"E"	,"I"	,"R"	,"I"	,"V"	,"L"	,"A"	,"I"	,"N"	,"T"	,"E"], //4
+            ["C"	,"I"	,"E"	,"E"	,"V"	,"A"	,"A"	,"I"	,"R"	,"E"	,"H"	,"I"	,"C"	,"N"	,"W"	,"N"	,"F"	,"P"	,"A"	,"H"	,"O"	,"P"], //5
+            ["L"	,"C"	,"S"	,"I"	,"T"	,"Y"	,"T"	,"I"	,"C"	,"Y"	,"A"	,"S"	,"C"	,"I"	,"H"	,"T"	,"S"	,"E"	,"I"	,"E"	,"O"	,"O"], //6
+            ["O"	,"Y"	,"T"	,"R"	,"T"	,"O"	,"E"	,"M"	,"W"	,"L"	,"D"	,"K"	,"C"	,"L"	,"M"	,"O"	,"O"	,"N"	,"H"	,"S"	,"O"	,"S"], //7
+            ["E"	,"S"	,"O"	,"T"	,"F"	,"F"	,"R"	,"H"	,"T"	,"H"	,"E"	,"A"	,"A"	,"E"	,"E"	,"O"	,"N"	,"T"	,"U"	,"D"	,"I"	,"E"], //8
+            ["L"	,"R"	,"W"	,"N"	,"E"	,"T"	,"S"	,"K"	,"R"	,"L"	,"S"	,"T"	,"S"	,"E"	,"A"	,"T"	,"H"	,"E"	,"E"	,"S"	,"T"	,"E"], //9
+            ["N"	,"R"	,"E"	,"S"	,"B"	,"E"	,"U"	,"S"	,"S"	,"L"	,"U"	,"E"	,"A"	,"D"	,"T"	,"R"	,"A"	,"S"	,"T"	,"A"	,"T"	,"T"], //10
+            ["I"	,"H"	,"S"	,"E"	,"E"	,"E"	,"T"	,"U"	,"L"	,"T"	,"R"	,"A"	,"L"	,"E"	,"V"	,"E"	,"Y"	,"O"	,"A"	,"E"	,"B"	,"T"], //11
+            ["O"	,"A"	,"I"	,"I"	,"I"	,"H"	,"L"	,"L"	,"T"	,"I"	,"F"	,"T"	,"D"	,"K"	,"F"	,"U"	,"L"	,"S"	,"F"	,"O"	,"N"	,"O"], //12
+            ["T"	,"O"	,"G"	,"C"	,"A"	,"R"	,"R"	,"U"	,"A"	,"G"	,"E"	,"M"	,"D"	,"Y"	,"O"	,"I"	,"A"	,"H"	,"R"	,"R"	,"S"	,"L"], //13
+            ["A"	,"M"	,"R"	,"C"	,"E"	,"N"	,"I"	,"D"	,"O"	,"O"	,"T"	,"W"	,"A"	,"C"	,"T"	,"T"	,"B"	,"A"	,"L"	,"N"	,"E"	,"B"], //14
+            ["T"	,"S"	,"E"	,"M"	,"U"	,"D"	,"E"	,"O"	,"N"	,"A"	,"E"	,"U"	,"F"	,"D"	,"N"	,"E"	,"I"	,"C"	,"D"	,"P"	,"D"	,"N"]  //15
+    ];
+
+
+
+var x = 0;
+    
+        for(linha  = 0; linha < 15; linha++){
+            document.write("<tr >");
+            for(coluna = 0; coluna < 22; coluna ++){
+                
+                x++;
+            
+                document.write("<td align='center' width='20px' height='20px' id = 'n"+x+"'>" + matriz[linha][coluna]+ "</td>" );
+
+
+                
+                
+                
+                
+            }
+            document.write("</tr>");
+            
+        }
+
+        function triciculo() {
+
+y = coluna
+document.getElementById("'+ +'").style.borderColor = "red";
+
+}
+
+        // adsads
+        
+    </script>
+
+
+
+    
+
+</table>
+
+<h1>
+    palavras
+</h1>
+
+<p>
+    BICICLETA
+    <br>
+CAMINHONETE 
+<br>
+CARRUAGEM
+<br>
+
+JETSKI
+<br>
+
+MOTOCICLETA 
+<br>
+
+PARAPENTE
+<br>
+
+PRANCHADESURF
+<br>
+
+E
+SKATE
+<br>
+
+TRICICLO
+<br>
+
+ULTRALEVE
+</p>
+</center>
+</body>
+</html>
